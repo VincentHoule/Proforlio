@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script defer src="JAVA/Main.js"></script>
+            <link rel="stylesheet" href="CSS/sectionDroite.css">
+            <link rel="stylesheet" href="CSS/enTete.css">
+            <link rel="stylesheet" href="CSS/corpsPropos.css">
+            <script src="https://kit.fontawesome.com/1d7303cdac.js" crossorigin="anonymous"></script>
+            <title>Recettes-Jammées</title>
+        </head>
+        <body>
+            
+            <header id="enTete">
+                <i  id="IcTitr" class="fa-solid fa-kitchen-set"></i>
+                <div id="Titr"><a>Recettes-Jammées</a></div>
+                <div id="Navi">
+                    <button onclick="window.location.href='Main.html'" id="Accu"><a>Accueil</a></button>
+                    <button  id="Bibli"><a>Référence</a></button>
+                    <button onclick="window.location.href='Propos.html'" id="Propos"><a>À Propos</a></button>
+                    <button onclick="window.location.href='Contact.html'" id="Contact"><a>Conctact</a></button>
+                </div>
+                <div id="PlRech"><input id="Recherche" type="text" placeholder="Recherche..."></div>
+                <button  id="ColorBtn"><i onclick="OnOff(this)"id="switch" class="fa-solid fa-toggle-off"></i></button>
+
+                </div>
+
+
+            </header>
+            
+            
+
+            <div id="sectionDroite">
+                <i onclick="window.location.href='PlatsPrincipale.html'" id="IcPlPr"class="fa-solid fa-plate-wheat"></i>
+                <button onclick="window.location.href='PlatsPrincipale.html'" id="PlPr" class="categories"><a>Plats principaux</a></button>
+                
+                <i onclick="window.location.href='Boissons.html'" id="IcBois" class="fa-solid fa-martini-glass-citrus"></i>
+                <button onclick="window.location.href='Boissons.html'" id="Bois" class="categories"><a>Boissons</a></button>
+                
+                <i onclick="window.location.href='Collations.html'" id="IcColl" class="fa-solid fa-drumstick-bite"></i>
+                <button onclick="window.location.href='Collations.html'" id="Coll" class="categories"><a>Collations</a></button>
+                
+                <i onclick="window.location.href='Desserts.html'" id="IcDess" class="fa-solid fa-ice-cream"></i>
+                <button onclick="window.location.href='Desserts.html'" id="Dess" class="categories"><a>Desserts</a></button>
+                
+                <i onclick="window.location.href='Projet.html'" id="IcProj" class="fa-brands fa-html5"></i>
+                <button onclick="window.location.href='Projet.html'" id="Proj" class="categories"><a>Projet</a></button>
+
+
+            </div>
+
+            <div id="corps">
+                <div id="SectionPropos"><h1>Propos</h1></div>
+                <div id="Img"></div>
+                <h2 id="Info"><b>Information</b></h2>
+                <div id="Information">
+                    <div id="Passion">
+                        <b class="InfoTitre">Passion</b>
+                        <ul id="Liste">
+                            <li>le Ski</li>
+                            <li>la Programmation</li>
+                            <li>le Badminton</li>
+                            <li>la Pêche</li>
+                            <li>le Dessin</li>
+                        </ul>
+                    </div>
+                    <div id="Connaissance">
+                        <b class="InfoTitre">Études</b>
+                        <ul id="Liste">
+                            <li>Apprend le CSharp</li>
+                            <li>Comprend bien le html</li>
+                            <li>Comprend bien le CSS</li>
+                            <li>Apprend le JavaScrpt</li>
+                        </ul>
+                    </div>
+                    <div id="AutreInfo">
+                        <b class="InfoTitre">Information Supplémentaitre</b>
+                        <ul id="Liste">
+                            <li>Travail depuis 2 ans au St-Hubert</li>
+                            <li>Possède un chat de 26lbs</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </body>
+    </html>

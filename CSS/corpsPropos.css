@@ -1,0 +1,66 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-texte1);
+}
+body{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12.5% 5%  auto 7%;
+    grid-template-rows: 100px auto;
+    grid-area: 0;
+    margin: 0;
+}
+#corps{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    animation: introCote 1s;
+    color: var(--color-texte1);
+
+}
+#SectionPropos{
+    font-size: 1.7em;
+    font-family: "text1";
+    color: var(--color-texte3);
+    text-shadow: 3px 3px 3px black;
+}
+#Info{
+    font-size: 1.7em;
+    font-family: "text1";
+    color: var(--color-texte2);
+    text-shadow: 2px 2px 2px black; 
+
+}
+#Information{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.InfoTitre{
+    color: var(--color-texte2);
+    font-family: "text1";
+    font-size: 1.2em;
+    
+}
+#Passion{
+    grid-column:1/2;
+    grid-row: 1/2;
+}
+#Etude{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+#AutreInfo{
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+}
+#Liste{
+    color: var(--color-texte2);
+    font-family: 'text1';
+    
+}

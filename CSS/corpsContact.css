@@ -1,0 +1,167 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-texte1);
+}
+body{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12.5% 5%  auto 7%;
+    grid-template-rows: 100px auto;
+    grid-area: 0;
+    margin: 0;
+}
+#corps{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    animation: introCote 1s;
+    color: var(--color-texte1);
+
+}
+#SectionContact{
+    font-size: 1.7em;
+    font-family: "text1";
+    color: var(--color-texte3);
+    text-shadow: 3px 3px 3px black;
+}
+.NomCommunication{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 50% 50%;
+}
+.Titre{
+    color: var(--color-texte2);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: "text1";
+    
+}
+.IcPropos{
+    color: var(--color-texte2);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: "text1";
+    font-size: 2em;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+.Info{
+    color: var(--color-texte2);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: "text1";
+}
+#LinkTell{
+    background-color: transparent;
+    border: none;
+    height: 80px;
+    width: 145px;
+    font-size: 1.2em;
+    transition:all ease 0.3s ;
+
+}
+#LinkTell:hover{
+   color: rgb(98,203,98) !important;
+   cursor: pointer;
+
+}
+#LinkFb{
+    background-color: transparent;
+    border: none;
+    height: 80px;
+    width: 145px;
+    font-size: 1.2em;
+    transition:all ease 0.3s ;
+
+}
+#LinkFb:hover{
+    color:  rgb(66, 103, 178) ;
+    cursor: pointer;
+
+
+}
+#LinkFb:link{
+    text-decoration: none;
+}
+#LinkFb:active{
+    text-decoration: none;
+}
+#LinkEmail{
+    background-color: transparent;
+    border: none;
+    height: 100px;
+    width: 20px;
+    font-size: 1.2em;
+    transition:all ease 0.3s ;
+
+}
+#LinkEmail:hover{
+    color: rgb(227,66,52);
+    cursor: pointer;
+
+}
+
+#Formulaire{
+    position: absolute;
+    transform: translateX(350px) translateY(500px);
+    width: 200px;
+    background-color: var(--color-texte3);
+    border: 3px solid var(--color-texte2);
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 5% 80% 15%;
+    grid-template-rows: 12% 1fr 1fr 1fr;
+    
+
+}
+#Quitter{
+    background-color: transparent;
+    border: none;
+    transition:all ease 0.3s ;
+    color: var(--color-texte4);
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+#Quitter:hover{
+    color: var(--color-texte1);
+}
+.Invisible{
+    display: none !important;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#Message{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.Message{
+    font-family: "text1";
+}
+#SecMessage{
+    grid-column: 2/3;
+    grid-row: 3;
+    background-color: lightgray;
+    border-radius: 5px;
+    resize: none;
+    font-family: "text1";
+}
+#envoyer{
+    grid-column: 2/3;
+    grid-row: 4;
+    font-family: "text1";
+    border: none;
+    background-color: transparent;
+    transition: all ease 0.3s;
+    color: var(--color-texte5);
+}
+#envoyer:hover{
+    color: var(--color-texte6);
+}

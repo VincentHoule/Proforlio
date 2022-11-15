@@ -1,0 +1,93 @@
+html{
+    margin: 0;
+    background-color: var(--color-texte1);
+}
+body{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12.5% 5%  auto 10%;
+    grid-template-rows: 100px 100vh auto;
+    grid-area: 0;
+    margin: 0;
+}
+
+.Ligne2{
+    grid-column: 1/2;
+    background-color:lightgray;
+    width: 2px;
+    height: 1800%;
+}
+#corps{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    color: var(--color-texte1);
+    animation: intro 1s;
+
+}#Pjt{
+    font-size: 1.7em;
+    font-family: "text1";
+    color: var(--color-texte3);
+    text-shadow: 3px 3px 3px black;
+}
+.Projets{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Titre{
+    color:var(--color-texte2);
+    font-family: "text1";
+    size: 100%;
+    z-index: 1;
+}
+.Img{
+    height: 400px;
+    background-color:var(--color-texte2);
+    width: 500px;
+}
+.Descrip{
+    margin-left: 5%;
+    color: lightgray;
+    font-family: "text1";
+    width: 80%;
+}
+.Ligne{
+    grid-column: 1/2;
+    background-color:lightgray;
+    width: 2px;
+    z-index: 1;
+    
+}
+#Navigateur{
+    margin-top: 125px;
+    margin-left: 1350px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.ChoixProjet{
+    text-decoration: none;
+    color:lightgray;
+    font-family: "text1";
+    font-size: 0.75em;
+    grid-column: 2/3;
+    padding: 5px;
+    
+}
+.ChoixProjet:hover{
+    color: var(--color-texte6);
+    transition: all 0.3s ease;
+}
+.ChoixProjet:link{
+    text-decoration: none;
+}
+.ChoixProjet:active{
+    color: var(--color-texte6);
+
+}

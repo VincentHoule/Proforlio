@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script defer src="JAVA/Main.js"></script>
+            <link rel="stylesheet" href="CSS/sectionDroite.css">
+            <link rel="stylesheet" href="CSS/enTete.css">
+            <link rel="stylesheet" href="CSS/corpsPLT.css">
+            <script src="https://kit.fontawesome.com/1d7303cdac.js" crossorigin="anonymous"></script>
+            <title>Collations</title>
+        </head>
+        <body>
+            
+            <header id="enTete">
+                <i  id="IcTitr" class="fa-solid fa-kitchen-set"></i>
+                <div id="Titr"><a>Recettes-Jammées</a></div>
+                <div id="Navi">
+                    <button onclick="window.location.href='Main.html'" id="Accu"><a>Accueil</a></button>
+                    <button  id="Bibli"><a>Référence</a></button>
+                    <button onclick="window.location.href='Propos.html'" id="Propos"><a>À Propos</a></button>
+                    <button onclick="window.location.href='Contact.html'" id="Contact"><a>Conctact</a></button>
+                </div>
+                <div id="PlRech"><input id="Recherche" type="text" placeholder="Recherche..."></div>
+                <button  id="ColorBtn"><i onclick="OnOff(this)"id="switch" class="fa-solid fa-toggle-off"></i></button>
+
+            </header>
+
+            <div id="sectionDroite">
+                <i onclick="window.location.href='PlatsPrincipale.html'" id="IcPlPr"class="fa-solid fa-plate-wheat"></i>
+                <button onclick="window.location.href='PlatsPrincipale.html'" id="PlPr" class="categories"><a>Plats principaux</a></button>
+                
+                <i onclick="window.location.href='Boissons.html'" id="IcBois" class="fa-solid fa-martini-glass-citrus"></i>
+                <button onclick="window.location.href='Boissons.html'" id="Bois" class="categories"><a>Boissons</a></button>
+                
+                <i onclick="window.location.href='Collations.html'" id="IcColl" class="fa-solid fa-drumstick-bite"></i>
+                <button onclick="window.location.href='Collations.html'" id="Coll" class="categories"><a>Collations</a></button>
+                
+                <i onclick="window.location.href='Desserts.html'" id="IcDess" class="fa-solid fa-ice-cream"></i>
+                <button onclick="window.location.href='Desserts.html'" id="Dess" class="categories"><a>Desserts</a></button>
+                
+                <i onclick="window.location.href='Projet.html'" id="IcProj" class="fa-brands fa-html5"></i>
+                <button onclick="window.location.href='Projet.html'" id="Proj" class="categories"><a>Projet</a></button>
+
+            </div>
+            <div id="Navigateur">
+                <div class="Ligne2"></div>
+                <li href="Titre"></li>
+            </div>
+            <div id="corps">                
+                <div id="Contenue">
+                    <div id="PLTPR"><h1>Collations</h1></div>
+                    <div class="Recette">
+                        <div class="Titre"><h1>Exemple</h1></div>
+                        <div class="Img"></div>
+                        <div class="Descrip"><p>Exemple Exemple Exemple</p></div>
+                        <hr class="Ligne">
+                        <ul class="Ingredients">
+                            <li>exmple</li>
+                        </ul>
+                        <hr class="Ligne"> 
+                        <ol class="Etape">
+                            <li>exemple</li>
+                            <li>exemple</li>
+                            <li>exemple</li>
+                        </ol>
+                        <hr class="Ligne">
+                        <div class="credit">par: Exemple</div>
+                    </div>
+                </div>
+            </div>
+            <div id="conditionlegal"></div>
+        </body>
+    </html>
