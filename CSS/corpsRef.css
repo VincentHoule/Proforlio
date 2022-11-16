@@ -1,0 +1,45 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-texte1);
+}
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12.5% 5%  auto 7%;
+    grid-template-rows: 100px auto;
+    grid-area: 0;
+    margin: 0;
+}
+#corps{
+
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: var(--color-texte1);
+    animation: introCote 1s;
+
+}
+#TitreRef{
+    font-size: 1.7em;
+    font-family: "text1";
+    color: var(--color-texte3);
+    text-shadow: 3px 3px 3px black;
+}
+.Personne{
+    display: grid;
+    grid-template-columns: 1fr 1fr 70%;
+    padding-top: 20px;
+}
+.Nom{
+    display: flex;
+    align-items: flex-end;
+    color:var(--color-texte2);
+    font-family: "text1";
+    size: 100%;
+    grid-column: 2;
+    padding-bottom: 15px;
+}
+.img{
+    grid-column: 1;
+}
