@@ -1,6 +1,7 @@
 var Root =document.querySelector(':root');
 var rs = getComputedStyle(Root);
 const switche=document.getElementById('switch');
+let modif=localStorage.setItem('couleur','change')
 ChangementdeCouleur();
 function OnOff(btn){
     btn.classList.toggle("fa-toggle-off");
