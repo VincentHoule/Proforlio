@@ -1,16 +1,42 @@
+
+
 var Root =document.querySelector(':root');
 var rs = getComputedStyle(Root);
 const switche=document.getElementById('switch');
-let modif=localStorage.setItem('couleur','change')
+
+if(switche.classList.contains("fa-toggle-off")){
+    switche.classList.remove("fa-toggle-off");
+    switche.classList.add(localStorage.getItem('couleur'));
+
+}
+else{
+    switche.classList.remove("fa-toggle-on");
+    switche.classList.add(localStorage.getItem('couleur'));
+}
 ChangementdeCouleur();
+
+
+
 function OnOff(btn){
+
+
     btn.classList.toggle("fa-toggle-off");
     btn.classList.toggle("fa-toggle-on");
-    
-    ChangementdeCouleur(btn);
-       
+    if(btn.classList.contains("fa-toggle-off")){
+        localStorage.setItem('couleur','fa-toggle-off');
+
+    }
+    else{
+        localStorage.setItem('couleur','fa-toggle-on');
+
+    } 
+    ChangementdeCouleur();
+
+
     
 }
+
+
 function ChangementdeCouleur(){
     if(switche.classList.contains("fa-toggle-on")){
     rs.getPropertyValue('--color-texte1')
@@ -60,7 +86,7 @@ var Formulaire=document.getElementById('Formulaire')
 function EnvEmail(){
     Formulaire.classList.toggle('Invisible');
 }
-Formulaire.addEventListener("submit", fermerPage);
+//Formulaire.addEventListener("submit", fermerPage);
 
 function fermerPage(e){
     e.preventDefault();
