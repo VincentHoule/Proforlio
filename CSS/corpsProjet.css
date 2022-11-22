@@ -36,9 +36,9 @@ html{
     z-index: 1;
 }
 .Img{
-    height: 400px;
+    height: 250px;
     background-color:var(--color-texte2);
-    width: 500px;
+    width: 320px;
 }
 .Descrip{
     margin-left: 5%;
