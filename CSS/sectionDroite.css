@@ -150,3 +150,38 @@
     cursor: pointer;
 
 }
+@media only screen and (max-width: 1300px){
+
+    .Screen{
+        display: none!important;
+    }
+
+    #IcTitr{
+        animation: shake ease 2s infinite; 
+        width: 60px;
+        border-radius:20px ;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.416);
+    }
+    #IcTitr:hover{
+        font-size: 2.2em;
+        transition: ease 0.2s;
+    }
+    #sectionDroite{
+        left: -100%;
+        transition: all 0.3s;
+    }
+    #sectionDroite.active {
+        left: 0;
+        z-index: 3;
+        display: grid!important;
+        width: 225px;
+
+
+    }
+    body{
+    grid-template-columns: 50px 20px  auto 50px!important;
+        
+    }
+
+
+}

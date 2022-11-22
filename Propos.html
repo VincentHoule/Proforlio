@@ -9,22 +9,17 @@
             <title>Propos</title>
         </head>
         <body>
-            
             <header id="enTete">
-                <i  id="IcTitr" class="fa-solid fa-kitchen-set"></i>
+                <button id="IcTitr"><i onclick="mobileMenu()" class="fa-solid fa-kitchen-set"></i></button>
                 <div id="Titr"><a>Recettes-Jammées</a></div>
-                <div id="Navi">
+                <div id="Navi" class="Screen">
                     <button onclick="window.location.href='Main.html'" id="Accu"><a>Accueil</a></button>
                     <button onclick="window.location.href='Reference.html'"  id="Bibli"><a>Référence</a></button>
                     <button onclick="window.location.href='Propos.html'" id="Propos"><a>À Propos</a></button>
                     <button onclick="window.location.href='Contact.html'" id="Contact"><a>Conctact</a></button>
                 </div>
-                <div id="PlRech"><input id="Recherche" type="text" placeholder="Recherche..."></div>
+                <div class="Screen"id="PlRech"><input id="Recherche" type="text" placeholder="Recherche..."></div>
                 <button  id="ColorBtn"><i onclick="OnOff(this)"id="switch" class="fa-solid fa-toggle-off"></i></button>
-
-                </div>
-
-
             </header>
             
             
@@ -47,7 +42,6 @@
 
 
             </div>
-
             <div id="corps">
                 <div id="SectionPropos"><h1>Propos</h1></div>
                 <div id="Img"></div>

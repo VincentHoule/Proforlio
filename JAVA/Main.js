@@ -95,3 +95,11 @@ function fermerPage(e){
     }
 }
 
+const menu = document.querySelector("#IcTitr");
+const dispa=document.querySelector("#sectionDroite")
+
+function mobileMenu() {
+    dispa.classList.toggle("active");
+
+}
+
