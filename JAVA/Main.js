@@ -4,11 +4,22 @@ var Root =document.querySelector(':root');
 var rs = getComputedStyle(Root);
 const switche=document.getElementById('switch');
 
-if(switche.classList.contains("fa-toggle-off")){
+
+if (switche.classList.contains(null)){
+    localStorage.setItem('couleur','fa-toggle-off');
+
+
+
+}
+
+else if(switche.classList.contains("fa-toggle-off")){
+
+
     switche.classList.remove("fa-toggle-off");
     switche.classList.add(localStorage.getItem('couleur'));
 
 }
+
 else{
     switche.classList.remove("fa-toggle-on");
     switche.classList.add(localStorage.getItem('couleur'));
